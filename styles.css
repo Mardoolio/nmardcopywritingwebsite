@@ -307,3 +307,44 @@ padding-top: 20px;
     padding: 10px;
     text-align: center;
   }
+
+/* Hide nav links and display only the "name" element centered when viewport is small horizontally */
+@media screen and (max-width: 800px) {
+    .navbar-right {
+      display: none;
+    }
+    .name {
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  /* Display grid-square elements in a single column when viewport is small horizontally */
+  @media screen and (max-width: 800px) {
+    .banner-image img{
+        object-position: -16vw 0vh;
+    }
+    .overlay h1{
+        font-size: 20px;
+    }
+    .three-part-grid {
+      flex-direction: column;
+    }
+    .grid-square {
+        width: 100%;
+        padding: 15px 0;
+      }
+      .grid-square h2 {
+        font-size: 24px;
+      }
+      .grid-square img {
+        max-width: 80px;
+        margin: 0 auto;
+      }
+    .what-i-do-section .grid-container {
+        grid-template-columns: 1fr;
+      }
+  }
+
+  
