@@ -310,13 +310,14 @@ padding-top: 20px;
 
 /* Hide nav links and display only the "name" element centered when viewport is small horizontally */
 @media screen and (max-width: 800px) {
-    .navbar-right {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-left {
       display: none;
     }
-    .name {
-      justify-content: center;
-      text-align: center;
-      width: 100%;
+    .navbar-right{
+        margin-top: 20px;
     }
   }
   
@@ -333,10 +334,11 @@ padding-top: 20px;
     }
     .grid-square {
         width: 100%;
-        padding: 15px 0;
+        padding: 20px 0;
       }
       .grid-square h2 {
-        font-size: 24px;
+        font-size: 20px;
+        padding: 0 40px;
       }
       .grid-square img {
         max-width: 80px;
