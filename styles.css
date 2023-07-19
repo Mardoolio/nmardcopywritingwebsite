@@ -1,0 +1,296 @@
+*{
+font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #687A8F;
+}
+.background-uniforming{
+    background-color: #fff;
+}
+
+body, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h2, p {
+text-align: center;
+}
+
+.navbar {
+z-index: 15;
+background-color: #687A8F;
+display: flex;
+justify-content: space-between;
+gap: 0;
+align-items: center;
+height: 60px;
+padding: 0 10%;
+box-shadow: 10px 10px 20px black;
+}
+
+.navbar-left {
+display: flex;
+align-items: center;
+}
+
+.name {
+color: white;
+font-weight: bold;
+font-size: 1.2rem;
+text-shadow: 0 0 5px black;
+}
+
+.navbar-right {
+display: flex;
+align-items: center;
+}
+
+.nav-link {
+color: lightgray;
+text-decoration: none;
+padding: 0 15px;
+}
+
+/* Change link color on hover */
+.nav-link:hover {
+color: white;
+}
+
+.banner-image{
+display: inline-block;
+position: relative;
+align-items: center;
+max-height: 80vh;
+overflow: hidden;
+box-shadow: 10px 10px 20px black;
+}
+.banner-image img{
+z-index: 1;
+max-width: 120%;
+object-fit: cover;
+object-position: -16vw -35vh;
+}
+
+.overlay {
+z-index: 2;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+background-color: #F7A11133;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+}
+
+.overlay h1 {
+color: white;
+font-size: 50px;
+font-weight: bold;
+text-align: center;
+padding: 20px;
+width: 100vw;
+text-shadow: 0 0 10px black;
+}
+.cta-intro-section{
+text-align: center;
+padding: 10px 20%;
+color: #000;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.about-me-section{
+text-align: center;
+padding: 10px 20%;
+color: #000;
+margin-bottom: 20px;
+}
+.white-divider{
+text-align: center;
+background-color: #fff;
+padding: 20px;
+}
+
+.three-part-grid{
+display: flex;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+color: #fff;
+text-align: center;
+}
+.grid-square{
+width: 33%;
+height: auto;
+padding: 15px 5%;
+padding-bottom: 30px;
+box-shadow: 10px 10px 20px black;
+}
+.grid-square h2{
+font-size: 30px;
+color: #eee;
+padding-top: 0px;
+}
+.grid-square img{
+max-width: 100px;
+padding: 20px 0px 0px 0px;
+}
+
+.blueberry{
+background-color: #687A8F;
+}
+.apricot{
+background-color: #F7882F;
+}
+.citrus{
+background-color: #F7A111;
+}
+.white{
+    background-color: #fff;
+}
+
+.what-i-do-section{
+box-shadow: 10px 10px 20px black;
+text-align: center;
+background-color: #687A8F;
+padding: 20px 0px;
+color: #fff;
+}
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+background-color: #687A8F;
+}
+
+.grid-item {
+background-color: #687A8F;
+padding: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.content {
+color: #fff;
+text-align: center;
+}
+
+h1 {
+font-size: 30px;
+margin-bottom: 5px;
+}
+
+p {
+font-size: 16px;
+margin: 0;
+}
+
+
+.bar {
+color: white;
+text-align: center;
+padding: 10px;
+cursor: pointer;
+font-size: 24px;
+box-shadow: 10px 10px 20px black;
+}
+.bar::after{
+content: " >";
+}
+.bar:hover::after {
+    display: inline-block;
+    margin-left: 5px; /* Add some space between the text and ">" symbol */
+    animation: oscillate 0.6s ease-in-out infinite; /* Apply the animation */
+  }
+
+@keyframes oscillate {
+    0%, 100% {
+      transform: translateX(0); /* Starting and ending position */
+    }
+    50% {
+      transform: translateX(5px); /* Middle position, move 5px to the right */
+    }
+  }
+
+.samples-accordion p{
+padding-top: 20px;
+}
+
+
+/* Hide all "sample-links" sections by default */
+.sample-links {
+    display: none;
+    overflow: hidden; /* Hide the content initially */
+    transition: height 0.3s ease; /* Add a transition for smoother animation */
+  }
+  
+  /* Show "sample-links" sections with class "show" */
+  .sample-links.show {
+    display: flex;
+    height: auto; /* Set height to auto when visible to trigger the animation */
+  }
+  
+  .get-in-touch {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .get-in-touch h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+  }
+  
+  textarea {
+    min-height: 100px; /* Set a minimum height for the textarea */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #F7882F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #F7A111;
+  }
+
+  footer{
+    color: #fff;
+    background-color: #687A8F;
+    padding: 10px;
+    text-align: center;
+  }
