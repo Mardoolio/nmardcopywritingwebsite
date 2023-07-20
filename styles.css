@@ -369,6 +369,10 @@ padding-top: 20px;
     .what-i-do-section .grid-container {
         grid-template-columns: 1fr;
       }
+      .two-part-grid{
+        flex-direction: column;
+        align-items: center;
+      }
   }
 
   
