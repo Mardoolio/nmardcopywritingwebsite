@@ -18,6 +18,29 @@ h2, p {
 text-align: center;
 }
 
+.two-part-grid{
+    display: flex;
+    background-color: white;
+    padding: 40px 20vw;
+    justify-content: space-evenly;
+}
+
+.two-part-grid img{
+    max-width: 360px;
+}
+
+.two-part-grid p{
+    text-align: left;
+}
+
+.two-part-grid-item{
+    min-width: 50%;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
 .navbar {
 z-index: 15;
 background-color: #333a56;
@@ -307,7 +330,6 @@ padding-top: 20px;
     padding: 10px;
     text-align: center;
   }
-
 /* Hide nav links and display only the "name" element centered when viewport is small horizontally */
 @media screen and (max-width: 800px) {
     .navbar{
