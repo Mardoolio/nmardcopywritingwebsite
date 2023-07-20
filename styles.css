@@ -374,9 +374,11 @@ padding-top: 20px;
         flex-direction: column;
         align-items: center;
     }
-
     .two-part-grid h1{
         font-size: 22px;
+    }
+    footer{
+        font-size: 12px;
     }
   }
 
