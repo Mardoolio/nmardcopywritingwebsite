@@ -27,6 +27,7 @@ text-align: center;
 
 .two-part-grid img{
     max-width: 360px;
+    border-radius: 20px;
 }
 
 .two-part-grid p{
