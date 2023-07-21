@@ -22,7 +22,7 @@
                 <a href="index.html" class="nav-link" style="text-decoration: underline;">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="#" class="nav-link">Work</a>
-                <a href="#" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
         </nav>
         <div class="banner-image">
@@ -243,24 +243,25 @@
         </section>
       </section>
 
-      <section class="get-in-touch white">
-        <h1>Get in Touch!</h1>
-        <form class="contact-form">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="company">Your Company:</label>
-          <input type="text" id="company" name="company" required>
-          
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-          
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+
+      <form class="contact-form">
+        <h1 style="text-align: center; padding: 20px;">Get in Touch!</h1>
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name*" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="company" name="company" placeholder="Your Company*" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email*" required>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+  </section>
     
       <footer>
         <h4>Niklas Mård | Copywriter & Translator | Stockholm & Remote</h4>
