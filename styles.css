@@ -18,6 +18,10 @@ h2, p {
 text-align: center;
 }
 
+header{
+    background-color: white;
+}
+
 .two-part-grid{
     display: flex;
     background-color: white;
